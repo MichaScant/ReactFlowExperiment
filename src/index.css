@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+ 
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.react-flow__node-mindmap {
+  background: black;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  padding: 2px 5px;
+  font-weight: 700;
+}
+
+.nodeText {
+  text-align: center;
+  margin-right: 1vw;
+}
+
+.nodeContents {
+  display: flex;
+  height: auto;
+  align-items: center;
+  width: auto;
+}

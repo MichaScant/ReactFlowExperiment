@@ -1,0 +1,13 @@
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json",
+      "react": [ "./node_modules/@types/react" ]
+    },
+    {
+      "path": "./tsconfig.node.json",
+      "react": [ "./node_modules/@types/react" ]
+    }
+  ]
+}

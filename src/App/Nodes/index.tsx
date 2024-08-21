@@ -23,18 +23,19 @@ const Nodes = ({ id, data }: NodeProps<Node<NodeData>>) => {
         defaultValue={data.label}
         onChange={(evt) => updateNodeLabel(id, evt.target.value)}
       />
-      <div className='Menu'>
         {parents && parents.length > 0 &&
-          <OverflowMenu
-            renderIcon={TableOfContents}
-            flipped={document?.dir === 'rtl'}
-          >
-            {parents.map((item) => {
-                return <OverflowMenuItem itemText = {item}/>
-            })}
-          </OverflowMenu>
+          <div className='Menu'>
+            <OverflowMenu
+              renderIcon={TableOfContents}
+              flipped={document?.dir === 'rtl'}
+              //iconDescription = ""
+            >
+              {parents.map((item) => {
+                  return <OverflowMenuItem itemText = {item}/>
+              })}
+            </OverflowMenu>
+          </div>
         }
-      </div>
       
       <Handle type="target" position={Position.Top} />
       <Handle type="source" position={Position.Bottom} />

@@ -1,0 +1,51 @@
+@use '@carbon/react';
+
+body {
+  margin: 0;
+}
+ 
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.react-flow__node-mindmap {
+  background: black;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  padding: 2px 5px;
+  font-weight: 700;
+}
+
+.nodeText {
+  text-align: center;
+  margin-right: 1vw;
+}
+
+.nodeContents {
+  display: flex;
+  height: auto;
+  align-items: center;
+  width: auto;
+}
+
+.cds--tooltip-trigger__wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+span.cds--popover-container.cds--popover--caret.cds--popover--high-contrast.cds--popover--top.cds--tooltip.cds--icon-tooltip {
+  display: flex;
+}
+
+.Menu {
+  color: white;
+  background-color: white;
+  height: 1.5rem;
+  width: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}

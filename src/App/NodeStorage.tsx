@@ -84,13 +84,18 @@ const useStore = createWithEqualityFn<RFState>((set, get) => ({
     });
   },
   getParents: (nodeId: string) => {
+    var index = 0;
+    var found = false;
     const parentNodes = get().nodes.map((node) => {
       if (node.id === nodeId) {
+        found = true
         return node.data.parents;
+      } else if (!found) {
+        index+=1;
       }
     })
 
-    return parentNodes[parentNodes.length - 1] as Array<string>;
+    return parentNodes[index] as Array<string>;
   }
 }));
  
